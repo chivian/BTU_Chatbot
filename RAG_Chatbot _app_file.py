@@ -6,7 +6,7 @@ from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 
 # Set your API key
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 # Load the vector store (created earlier in Colab)
 vector_store = FAISS.load_local(
