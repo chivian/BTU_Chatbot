@@ -24,12 +24,27 @@ qa_chain = RetrievalQA.from_chain_type(
     chain_type="stuff"
 )
 
-# Streamlit UI
-st.set_page_config(page_title="BTU Assistant", layout="centered")
-st.title("BTU Knowledge Assistant")
-st.markdown("Ask me anything about the Business Technology Unit or Product Management!")
+# Page config
+st.set_page_config(page_title="BTU Assistant", page_icon="📘", layout="centered")
 
-question = st.text_input("Your Question", placeholder="e.g. What does BTU do?")
+# Display logo
+st.image("btu_logo.jpeg", width=180)
+
+# Branding text
+st.markdown("<h1 style='text-align: center; color: navy;'>BTU Knowledge Assistant</h1>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: gray;'>Get quick answers from internal BTU documentation</h4>", unsafe_allow_html=True)
+
+# Input UI
+question = st.text_input("Ask a question about BTU", placeholder="e.g. What does BTU do?")
+
+
+
+# Streamlit UI
+#st.set_page_config(page_title="BTU Assistant", layout="centered")
+#st.title("BTU Knowledge Assistant")
+#st.markdown("Ask me anything about the Business Technology Unit or Product Management!")
+
+#question = st.text_input("Your Question", placeholder="e.g. What does BTU do?")
 
 
 if question:
