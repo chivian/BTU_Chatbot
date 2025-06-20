@@ -32,7 +32,7 @@ st.image("btu_logo.jpeg", width=180)
 
 # Branding text
 st.markdown("<h1 style='text-align: center; color: navy;'>BTU Knowledge Assistant</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: gray;'>Get quick answers from internal BTU documentation</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: gray;'>Get quick answers about the Business Technology Unit and Product Management</h4>", unsafe_allow_html=True)
 
 # Input UI
 question = st.text_input("Ask a question about BTU", placeholder="e.g. What does BTU do?")
