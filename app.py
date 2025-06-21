@@ -27,43 +27,6 @@ qa_chain = RetrievalQA.from_chain_type(
 # Page config
 st.set_page_config(page_title="BTU Assistant", page_icon="📘", layout="centered")
 
-# Custom CSS for red/grey theme
-st.markdown("""
-    <style>
-        body {
-            background-color: #f0f0f0;
-        }
-        .stApp {
-            background-color: #f9f9f9;
-            color: #444;
-        }
-        .title {
-            font-size: 36px;
-            color: #b30000;
-            font-weight: bold;
-        }
-        .subtitle {
-            font-size: 16px;
-            color: #666;
-        }
-        .stTextInput > div > div > input {
-            border: 2px solid #b30000;
-        }
-        .stButton>button {
-            background-color: #b30000;
-            color: white;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-    <h1 style='color: #b30000; font-size: 36px; font-weight: bold; margin-bottom: 0;'>
-        BTU Knowledge Assistant
-    </h1>
-    <p style='color: grey; font-size: 16px; margin-top: 0;'>
-        Ask about the Business Technology Unit or Product Management
-    </p>
-""", unsafe_allow_html=True)
 
 # Display logo
 st.image("btu_logo.jpeg", width=180)
