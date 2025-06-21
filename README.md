@@ -1,85 +1,60 @@
-🧠 BTU Knowledge Assistant Chatbot
-BTU Knowledge Assistant is a custom RAG-based (Retrieval-Augmented Generation) chatbot designed to answer questions about the Business Technology Unit (BTU) and its work — including how it relates to product management.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BTU Knowledge Assistant</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333; background-color: #f5f5f5; padding: 20px;">
 
-Built using:
+    <h1 style="color: #b30000;">BTU Knowledge Assistant</h1>
 
-🔗 LangChain
+    <p><strong>BTU Knowledge Assistant</strong> is a custom-built Retrieval-Augmented Generation (RAG) chatbot designed to answer questions about the Business Technology Unit (BTU) and product management using internal documents, PDFs, Word files, and even YouTube video transcripts.</p>
 
-🧠 OpenAI API
+    <h2 style="color: #b30000;">🔧 Features</h2>
+    <ul>
+        <li>RAG-powered chatbot using OpenAI and LangChain</li>
+        <li>Supports PDF, Word documents, and YouTube videos</li>
+        <li>Built with Streamlit for easy interaction</li>
+        <li>Deployed via Streamlit Cloud (or intranet)</li>
+        <li>Branded with red and grey color scheme for BTU identity</li>
+    </ul>
 
-📦 FAISS Vector Store
-
-🎨 Streamlit (for the user interface)
-
-☁️ Streamlit Cloud / Intranet deployment
-
-📌 Features
-✅ RAG-powered conversational assistant
-
-✅ Answers grounded in internal docs (PDFs, Word files)
-
-✅ Integrated product management references
-
-✅ Styled in official BTU brand colors (grey and red)
-
-✅ Embeds company logo and supports friendly interactions
-
-✅ Can be deployed on the intranet or online via Streamlit Cloud
-
-📂 Folder Structure
-
+    <h2 style="color: #b30000;">📁 Folder Structure</h2>
+    <pre style="background-color: #eee; padding: 10px; border: 1px solid #ccc;">
 BTU_Chatbot/
-│
-├── app.py                  # Streamlit web app
-├── faiss_index/            # Vector store of embedded documents
-├── requirements.txt        # Dependencies for Streamlit Cloud
-├── btu_logo.jpeg           # BTU Logo
-└── README.md               # You're here!
+├── app.py                # Streamlit frontend
+├── faiss_index/          # Folder for FAISS vector store
+├── requirements.txt      # Python dependencies
+├── logo.jpeg             # BTU logo file
+└── README.md             # Project documentation
+    </pre>
 
-🚀 How to Run (Locally)
-1. Clone the repo
-git clone https://github.com/your-username/BTU_Chatbot.git
-cd BTU_Chatbot
-2. Create a virtual environment and activate it
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-3. Install dependencies
-pip install -r requirements.txt
-4. Set your OpenAI API key
-export OPENAI_API_KEY='your-api-key-here'  # on Linux/Mac
-# set OPENAI_API_KEY=your-api-key-here     # on Windows
-5. Run the app
-streamlit run app.py
+    <h2 style="color: #b30000;">🚀 How to Run Locally</h2>
+    <ol>
+        <li>Clone the repo</li>
+        <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+        <li>Run the app: <code>streamlit run app.py</code></li>
+    </ol>
 
+    <h2 style="color: #b30000;">🔐 API Key</h2>
+    <p>Make sure to set your <code>OPENAI_API_KEY</code> environment variable before launching.</p>
 
-🌐 Deploy via Streamlit Cloud
-Push your repository to GitHub
+    <h2 style="color: #b30000;">🌐 Deployment</h2>
+    <ul>
+        <li><strong>Streamlit Cloud:</strong> Upload your repo and deploy directly.</li>
+        <li><strong>Intranet Server:</strong> Use <code>streamlit run app.py</code> on your internal server for access via IP.</li>
+    </ul>
 
-Go to Streamlit Cloud
+    <h2 style="color: #b30000;">🧠 Powered By</h2>
+    <ul>
+        <li>LangChain</li>
+        <li>FAISS</li>
+        <li>OpenAI (GPT-3.5/4)</li>
+        <li>Streamlit</li>
+    </ul>
 
-Connect your repo and set:
+    <p style="margin-top: 40px;"><em>Developed by Chinwe Vivian Aliyu for the Business Technology Unit (BTU).</em></p>
 
-Main file: app.py
+</body>
+</html>
 
-Secrets: Add OPENAI_API_KEY under app settings
-
-Launch your app and share the link!
-
-🛡 Security Notes
-Make sure your OPENAI_API_KEY is stored as an environment variable or inside Streamlit Cloud secrets.
-
-If deploying internally, remove any public-facing APIs and restrict access via your company’s intranet firewall.
-
-
-💡 Future Improvements
-Support for multiple knowledge bases
-
-Admin panel for uploading new documents
-
-Integration with internal staff directory or ticketing system
-
-👩🏽‍💻 Project Maintainer
-Chinwe Vivian Aliyu
-Head of Business Technology Unit (BTU)
-Federal Inland Revenue Service, Nigeria
-WiDS Ambassador • Data Scientist • Mentor 
