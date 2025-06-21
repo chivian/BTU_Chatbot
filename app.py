@@ -56,6 +56,15 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+    <h1 style='color: #b30000; font-size: 36px; font-weight: bold; margin-bottom: 0;'>
+        BTU Knowledge Assistant
+    </h1>
+    <p style='color: grey; font-size: 16px; margin-top: 0;'>
+        Ask about the Business Technology Unit or Product Management
+    </p>
+""", unsafe_allow_html=True)
+
 # Display logo
 st.image("btu_logo.jpeg", width=180)
 
