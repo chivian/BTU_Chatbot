@@ -1,8 +1,8 @@
 
 import streamlit as st
-from langchain_community.vectorstores import FAISS
+from langchain_cfrom langchain_openai import ChatOpenAIommunity.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
-from langchain.llms import OpenAI
+from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 # Set your API key
@@ -15,7 +15,8 @@ vector_store = FAISS.load_local(
 )
 
 # Set up the LLM
-llm = OpenAI(temperature=0, openai_api_key=OPENAI_API_KEY)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, api_key=OPENAI_API_KEY)
+
 
 # Create the retrieval + generation chain
 qa_chain = RetrievalQA.from_chain_type(
