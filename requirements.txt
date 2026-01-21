@@ -10,7 +10,7 @@ openai
 faiss-cpu
 
 
-pydantic==1.10.13
+
 
 
 
